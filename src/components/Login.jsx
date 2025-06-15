@@ -27,7 +27,7 @@ export default function LoginPage() {
         alert('Login success');
         navigate('/');
       } else {
-        alert(data.message);
+        //alert(data.message);
       }
     } catch (error) {
       setLoading(false);
