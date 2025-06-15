@@ -37,7 +37,7 @@ export default function Card(props) {
 
 console.log(props.id)
     try {
-      const response = await fetch(`https://backend-notbook-app.onrender.com/${props.id}`, {
+      const response = await fetch(`https://backend-notbook-app.onrender.com/crud/delete/${props.id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
