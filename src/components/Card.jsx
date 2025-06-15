@@ -8,7 +8,7 @@ export default function Card(props) {
 
   const handleSave = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/crud/update/${props.id}`, {
+      const response = await fetch(`https://backend-notbook-app.onrender.com/crud/update/${props.id}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ export default function Card(props) {
 
 console.log(props.id)
     try {
-      const response = await fetch(`http://localhost:3000/crud/delete/${props.id}`, {
+      const response = await fetch(`https://backend-notbook-app.onrender.com/${props.id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
